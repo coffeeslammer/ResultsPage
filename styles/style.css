@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+
+    background-color: #333;
+}
+
+.container {
+    background-color: white;
+    max-width: 1000px;
+}
+
+.results-container {
+    display: grid;
+    justify-content: center;
+    background-image: linear-gradient(to top, #312be5, #6543fe);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+main h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    font-weight: 700;
+    justify-self: center;
+    align-self: center;
+}
+
+.rating-circle-container {
+    display: grid;
+    width: 8.75rem;
+    height: 8.75rem;
+    background-image: linear-gradient(to bottom, #4d22ca, #4633ed);
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.rate-text {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-items: center;
+}
+
+.of-rate-text {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-weight: 700;
+}
+
+main h2 {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+    justify-self: center;
+}
+
+main p {
+    color: hsl(241, 100%, 89%);
+    justify-self: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ------------------SUMMARY SECTION-------------------------- */
+
+.summary-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+
+.summary-container h2 {
+    color: #2f354f;
+    font-size: 1.125rem;
+    padding-top: 20px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.summary-container h3 {
+    font-size: 1rem;
+}
+
+.sub-containers {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sub-containers .over-one-hundred {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+.icons {
+    padding-left: 1rem;
+}
+
+.reaction-container {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.reaction-text {
+    color: hsl(0, 100%, 67%);
+}
+
+.one-hundred {
+    color: #9a949e;
+    font-weight: 700;
+    padding-left: .5rem;
+}
+
+.over-one-hundred {
+    color: #2f354f;
+    font-weight: 700;
+    justify-items: end;
+    padding-right: 5px;
+}
+
+.memory-container {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.memory-text {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal-container {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.verbal-text {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual-container {
+    background-color: hsla(241, 81%, 54%, 0.05);
+}
+
+.visual-text {
+    color: hsl(241, 81%, 54%);
+}
+
+.btn-continue {
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-continue:hover {
+    background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
+}
+
+@media(min-width: 675px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2rem;
+
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    main p {
+        margin-bottom: 1rem;
+    }
+
+    .rating-circle-container {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+
+    .rate-text {
+        font-size: 4rem;
+    }
+
+    .results-container {
+        border-radius: 2rem;
+    }
+
+    .summary-container h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-continue {
+        margin-top: 1rem;
+    }
+}
